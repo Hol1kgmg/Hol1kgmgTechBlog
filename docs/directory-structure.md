@@ -28,6 +28,7 @@ frontend/
 │   │   │   ├── profile/      # プロフィール管理
 │   │   │   ├── articles/     # 記事管理
 │   │   │   └── projects/     # プロジェクト管理
+│   │   └── layout.tsx         # ルートレイアウト
 │   │   └── page.tsx          # トップページ
 │   │
 │   ├── features/              # 機能単位のモジュール
