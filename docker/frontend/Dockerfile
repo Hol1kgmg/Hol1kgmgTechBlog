@@ -7,10 +7,11 @@ WORKDIR /src
 COPY ../../frontend/package*.json ./
 # COPY ../../frontend/panda.config.ts ./
 
-
 RUN npm install
 
+# フォントファイルを含むすべてのファイルをコピー
 COPY ../../frontend/ .
+
 
 EXPOSE 3000
 
