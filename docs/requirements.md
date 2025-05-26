@@ -11,6 +11,7 @@
 ### 1.2 ソーシャルリンク
 - GitHub、Twitter、LinkedInなどのソーシャルメディアリンク
 - 技術ブログ（Zenn、Qiita）のリンク
+詳細は[プロフィールdocs](./feature/profile.md)と[ミニプロフィールdocs](./feature/mini-profile.md)に記載
 
 ## 2. ポートフォリオ表示機能
 
