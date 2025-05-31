@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --color-primary: #9333ea;
+  --color-secondary: #4b5563;
+  --color-accent: #9333ea;
+  --color-muted: #6b7280;
+  --color-border: #374151;
+  --color-input: #1f2937;
+  --color-ring: #9333ea;
+  --radius: 0.5rem;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} 

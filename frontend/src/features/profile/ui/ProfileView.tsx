@@ -22,7 +22,7 @@ export const ProfileView: React.FC = () => {
     username: "Hol1kgmg",
     email: "hol1kgmg@example.com",
     avatar: "https://via.placeholder.com/150",
-    bio: "フロントエンドエンジニアとして働いています。ReactとTypeScriptが得意です。",
+    bio: "Webアプリのフルスタックエンジニアとして働いています。プログラミングなんも分からん",
     socialLinks: {
       github: "https://github.com/Hol1kgmg",
       twitter: "https://twitter.com/Hol1kgmg"
@@ -49,9 +49,9 @@ export const ProfileView: React.FC = () => {
             <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               {profile.username}
             </h2>
-            <p className="text-gray-400 mt-2">
+            {/* <p className="text-gray-400 mt-2">
               {profile.email}
-            </p>
+            </p> */}
           </div>
           
           {/* 自己紹介 */}

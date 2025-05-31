@@ -2,7 +2,7 @@ import React from "react";
 import { DashboardCard } from "@/entities/dashboard/ui/DashboardCard";
 import { StatsCard } from "@/features/stats/ui/StatsCard";
 import { DockNavigation } from "@/shared/ui/DockNavigation";
-import { Header } from "@/widgets/header";
+import { Header } from "@/widgets/header/ui/Header";
 
 // 仮のデータ
 const recentArticles = [

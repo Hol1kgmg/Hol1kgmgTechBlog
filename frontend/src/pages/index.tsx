@@ -1,8 +1,6 @@
-"use client";
-
 import React from "react";
-import { Header } from "@/shared/ui/Header";
-import { DockNavigation } from "@/shared/ui/DockNavigation";
+import { Header } from "@/widgets/header/ui/Header";
+import { DockNavigation } from "@/widgets/dock-navigation";
 
 // 仮のデータ
 const featuredArticles = [
@@ -39,7 +37,7 @@ const categories = [
   { id: 4, name: "プログラミング言語", count: 10 },
 ];
 
-export default function Page() {
+export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
       <Header title="Hol1kgmgTechBlog" showSearch={true} />
@@ -119,4 +117,4 @@ export default function Page() {
       <DockNavigation />
     </div>
   );
-}
+} 
