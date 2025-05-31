@@ -1,9 +1,7 @@
-"use client";
-
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Search } from '@/shared/ui/Search';
-import { Menu } from '@/shared/ui/Menu';
+import { Menu } from './Menu';
 
 interface NavigationItem {
   label: string;
