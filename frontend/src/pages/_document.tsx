@@ -6,7 +6,8 @@ export default function Document() {
       <Head>
         <meta name="description" content="Hol1kgmgTechBlog - 技術的な知見や経験を共有するブログ" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="alternate icon" href="/favicon.ico" />
       </Head>
       <body>
         <Main />
