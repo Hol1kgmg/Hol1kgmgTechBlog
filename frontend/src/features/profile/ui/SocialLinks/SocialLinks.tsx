@@ -1,4 +1,5 @@
 import React from "react";
+import { GitHubIcon, TwitterIcon } from "@/shared/ui/Icons";
 
 interface SocialLinksData {
   github?: string;
@@ -18,8 +19,9 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ socialLinks }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white transition-colors"
+          aria-label="GitHub"
         >
-          GitHub
+          <GitHubIcon />
         </a>
       )}
       {socialLinks.twitter && (
@@ -28,8 +30,9 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({ socialLinks }) => {
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-white transition-colors"
+          aria-label="Twitter"
         >
-          Twitter
+          <TwitterIcon />
         </a>
       )}
     </div>
