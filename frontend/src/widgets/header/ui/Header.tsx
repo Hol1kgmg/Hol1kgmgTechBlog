@@ -43,7 +43,7 @@ export const Header: React.FC<HeaderProps> = ({
               {blogName}
             </Link>
             {title !== blogName && (
-              <span className="text-xl text-gray-400">{title}</span>
+              <span className="text-xl text-gray-400">/ {title}</span>
             )}
           </div>
           <nav className="flex items-center gap-6">

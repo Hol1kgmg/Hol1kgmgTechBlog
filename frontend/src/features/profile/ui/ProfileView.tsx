@@ -26,7 +26,7 @@ export const ProfileView: React.FC = () => {
     id: "1",
     username: "Hol1kgmg",
     email: "hol1kgmg@example.com",
-    avatar: "https://via.placeholder.com/150",
+    avatar: "/images/profile_image.jpg",
     bio: "Webアプリのフルスタックエンジニアとして働いています。プログラミングなんも分からん",
     socialLinks: {
       github: "https://github.com/Hol1kgmg",
