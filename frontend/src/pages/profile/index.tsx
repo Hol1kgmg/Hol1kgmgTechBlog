@@ -5,7 +5,6 @@ import { ProfileView } from "../../features/profile/ui/ProfileView";
 const ProfilePage: React.FC = () => {
   return (
     <div>
-      <h1>プロフィール</h1>
       <ProfileView />
       {/* <ProfileForm /> */}
     </div>
