@@ -1,5 +1,4 @@
 import React from "react";
-import { Header } from "@/widgets/header";
 import { ProfileAvatar } from "./ProfileAvatar";
 import { ProfileInfo } from "./ProfileInfo";
 import { SocialLinks } from "./SocialLinks";
@@ -38,7 +37,6 @@ export const ProfileView: React.FC = () => {
 
   return (
     <>
-      <Header title="Profile" />
       <div className="min-h-screen text-white">
         <div className="max-w-2xl mx-auto pt-20 pb-12 px-4">
           <div className="flex flex-col items-center space-y-6">

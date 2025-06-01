@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Search } from '@/shared/ui/Search';
+import { Search } from '@/widgets/header/ui/Search';
 
 interface NavigationItem {
   label: string;

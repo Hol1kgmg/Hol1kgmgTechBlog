@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { Search } from '@/shared/ui/Search';
+import { Search } from '@/widgets/header/ui/Search';
 import { Menu } from './Menu';
 
 interface NavigationItem {
@@ -10,12 +10,14 @@ interface NavigationItem {
 
 interface HeaderProps {
   title: string;
+  blogName?: string;
   showSearch?: boolean;
   navigationItems?: NavigationItem[];
 }
 
 export const Header: React.FC<HeaderProps> = ({
   title,
+  blogName = "Hol1kgmgTechBlog",
   showSearch = true,
   navigationItems = [
     { label: "記事一覧", href: "/articles" },
@@ -36,9 +38,14 @@ export const Header: React.FC<HeaderProps> = ({
       <div className="max-w-7xl mx-auto">
         {/* デスクトップ表示 */}
         <div className="hidden md:flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold hover:text-purple-400 transition-colors">
-            {title}
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link href="/" className="text-2xl font-bold hover:text-purple-400 transition-colors">
+              {blogName}
+            </Link>
+            {title !== blogName && (
+              <span className="text-xl text-gray-400">{title}</span>
+            )}
+          </div>
           <nav className="flex items-center gap-6">
             {navigationItems.map((item) => (
               <Link
@@ -57,9 +64,14 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* モバイル表示 */}
         <div className="md:hidden flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold">
-            {title}
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link href="/" className="text-xl font-bold">
+              {blogName}
+            </Link>
+            {title !== blogName && (
+              <span className="text-lg text-gray-400">/ {title}</span>
+            )}
+          </div>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="p-2 hover:bg-gray-800 rounded-lg transition-colors"
