@@ -13,6 +13,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Docker
 - `docker-compose up` - Start the containerized development environment
 
+### Git & GitHub
+- When creating Pull Requests, always assign to `Hol1kgmg`
+  ```bash
+  gh pr create --title "タイトル" --body "本文" --assignee Hol1kgmg --base develop
+  ```
+
 ## Architecture
 
 This project uses **Feature-Sliced Design (FSD)** with the following layer hierarchy:
